@@ -3,41 +3,120 @@
 		REAL news REAL people REAL fear REAL feeling REAL reality
 	</title>
 	<link rel="stylesheet" href="folder.css">
+    <style>
+        .newspread {
+            display:flex;
+            flex-flow:row;
+            height:auto;
+            width:auto;
+            padding:0;
+            margin:0;
+        }
+        .featured {
+            display:flex;
+            flex-flow:column;
+            flex-grow:1;
+            width:auto;
+            max-width:35%;
+            margin:0;
+            padding:0 32px;
+        }
+        .navigation {
+            height:auto;
+            width:auto;
+            position:absolute;
+            left:0;
+            writing-mode:vertical-lr;
+            padding:32px 4px;
+            margin:0;
+        }
+        .navigationmobile {
+            height:auto;
+            margin:0 32px;
+        }
+
+        @media screen and (orientation:landscape) {
+            .navigationmobile {
+                visibility:hidden;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            .newspread {
+                flex-flow:column;
+                margin:0px -32px;
+            }
+            .featured {
+                max-width:100%;
+            }
+            .navigation {
+                padding:0;
+                visibility:hidden;
+            }
+        }
+    </style>
 </head>
-<body>
-	<div class="folder" style="height:auto; padding:0px 4px;">
+<body style="padding:0;margin:0;overflow-x:hidden;">
+	<div class="folder" style="height:auto;width:100%; max-width:100%;padding:0;margin:0;">
 		<h1>
     			BIG OL' NEWS: extended reports
 		</h1>
 	</div>
-	<div class="folder" style="height:auto;width:auto;position:absolute;left:0;writing-mode:vertical-lr;padding:32px 4px;">
-		<a href="./archive">archive</a>
-		&emsp;
-		<a href="./submit">submit</a>
-		&emsp;
-		<a href="https://pm.us16.list-manage.com/subscribe?u=b56d5debe19a39412499a3f88&id=7adae20909">digital (FREE)</a>
-		&emsp;
-		<a href="https://ko-fi.com/s/57fdb39ee6">physical</a>
-	</div>
-	<div class="folder" style="height:auto; padding:0 0;">
-		<a href="./files/photos/BONer.gif"><img src="./files/photos/BONer.gif"/></a>
-	</div>
-	<div class="folder" style="height:auto;">
-		<p>
-    			What's black and white and read all over? BIG OL' NEWS.
-    			<br/>
-    			REAL news REAL people REAL fear REAL feeling REAL reality
-    			<br/>
-		</p>
-	</div>
-	<div class="folder" style="height:auto;">
-		<p>
-    			What is Big Ol' News: extended reports? It's a newspaper! One that releases both digitally directly to your email inbox, and physically to your regular mailbox! The digital version is always 100% FREE and previous copies are always archived. The physical version costs a small amount to cover printing and shipping and contains bonus features for the truly dedicated news reader!
-    			<br/>
-    			<br/>
-    			You can read copies of past digital editions at the <a href="./archive">archive link</a>! You can learn how to submit to the paper at the <a href="./submit">submit link</a>! You can sign up to the email blaster for free at the <a href="https://pm.us16.list-manage.com/subscribe?u=b56d5debe19a39412499a3f88&id=7adae20909">digital link</a>! You can purchase physical prints at the <a href="https://ko-fi.com/s/57fdb39ee6">physical link</a>! Wahoo!
-    			<br/>
-    			Oh, also, you can buy ads at $5 per square inch of page!
-		</p>
-	</div>
+    <div class="folder navigation">
+        <a href="./archive">archive</a>
+        &emsp;
+        <a href="./submit">submit</a>
+        &emsp;
+        <a href="https://pm.us16.list-manage.com/subscribe?u=b56d5debe19a39412499a3f88&id=7adae20909">digital (FREE)</a>
+        &emsp;
+        <a href="https://ko-fi.com/s/57fdb39ee6">physical</a>
+    </div>
+    <div class="newspread">
+        <div style="display:flex;flex-flow:column;width:auto;min-width:45%;flex-grow:2;">
+	        <div class="folder" style="height:auto; padding:0 0;">
+		        <img src="./files/photos/BONer.gif"/>
+	        </div>
+            <div class="folder navigationmobile">
+                <a href="./archive">archive</a>
+                &emsp;
+                <a href="./submit">submit</a>
+                &emsp;
+                <a href="https://pm.us16.list-manage.com/subscribe?u=b56d5debe19a39412499a3f88&id=7adae20909">digital (FREE)</a>
+                &emsp;
+                <a href="https://ko-fi.com/s/57fdb39ee6">physical</a>
+            </div>
+	        <div class="folder" style="height:auto;">
+		        <p>
+            			What's black and white and read all over? BIG OL' NEWS.
+            			<br/>
+            			REAL news REAL people REAL fear REAL feeling REAL reality
+            			<br/>
+		        </p>
+	        </div>
+	        <div class="folder" style="height:auto;">
+		        <p>
+            			What is Big Ol' News: extended reports? It's a newspaper! One that releases both digitally directly to your email inbox, and physically to your regular mailbox! The digital version is always 100% FREE and previous copies are always archived. The physical version costs a small amount to cover printing and shipping and contains bonus features for the truly dedicated news reader!
+            			<br/>
+            			<br/>
+            			You can read copies of past digital editions at the <a href="./archive">archive link</a>! You can learn how to submit to the paper at the <a href="./submit">submit link</a>! You can sign up to the email blaster for free at the <a href="https://pm.us16.list-manage.com/subscribe?u=b56d5debe19a39412499a3f88&id=7adae20909">digital link</a>! You can purchase physical prints at the <a href="https://ko-fi.com/s/57fdb39ee6">physical link</a>! Wahoo!
+            			<br/>
+            			Oh, also, you can buy ads at $5 per square inch of page!
+		        </p>
+	        </div>
+        </div>
+        <div class="featured">
+            <div class="folder" style="height:auto;width:auto;flex-flow:column;margin:0;padding:0;max-width:100%;">
+                <p style="margin:0;padding:0;">FEATURED ARTICLE</p>
+                <h1>Lincoln and Grimsby Schoolchildren Found Consuming Human Bones - Autopsy Impossible </h1>
+                <p>
+                    After reports of several missing local pets near schools in Lincoln and Grimsby, officials finally decided to check the school grounds—and they were shocked by what they found. 46 partial skeletons were found scattered across multiple elementary and middle school campuses, 12 of which were identifiably human. Of the remains found, only one still had some meat on its bones. Most of these remains were charred and riddled with gnaw marks, and many of the bones had been cracked open so the marrow could be sucked out. One police officer vomited on finding what has been termed “the cadaver stacks.”
+                </p>
+                <p>
+                    85 local children have been implicated in the murder and consumption of the as-of-yet unidentified remains. Police are dumbfounded as to how to move forward, given the huge number of suspects and the lack of anyone who truly gives a toot about any of the potential victims.
+                </p>
+                <p>
+                    “Maybe we just chalk this up to kids being kids?” one officer suggested at the press conference this morning. Police are currently declining to press charges. 
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
