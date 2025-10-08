@@ -12,7 +12,7 @@
             display:flex;
             flex-flow:row;
             height:auto;
-            width:auto;
+            width:100%;
             padding:0;
             margin:0;
         }
@@ -20,9 +20,7 @@
             display:flex;
             flex-flow:column;
             flex-grow:1;
-            width:auto;
             margin:0;
-            padding:0 32px;
         }
         .navigation {
             height:auto;
@@ -35,28 +33,25 @@
         }
         .navigationmobile {
             height:auto;
-            margin:0 32px;
         }
 
         @media screen and (orientation:landscape) {
             .featured {
                 max-width:35%;
-            }
-            .navigationmobile {
-                visibility:hidden;
+                width:auto;
             }
         }
         @media screen and (orientation:portrait) {
+            body {
+                font-size:4vw;
+            }
             .newspread {
                 flex-flow:column;
-                margin:0px -32px;
+                margin:0;
             }
             .featured {
                 max-width:100%;
-            }
-            .navigation {
-                padding:0;
-                visibility:hidden;
+                width:100%;
             }
         }
     </style>
@@ -67,17 +62,8 @@
     			BIG OL' NEWS: extended reports
 		</h1>
 	</div>
-    <div class="folder navigation">
-        <a href="./archive">archive</a>
-        &emsp;
-        <a href="./submit">submit</a>
-        &emsp;
-        <a href="https://pm.us16.list-manage.com/subscribe?u=b56d5debe19a39412499a3f88&id=7adae20909">digital (FREE)</a>
-        &emsp;
-        <a href="https://ko-fi.com/s/57fdb39ee6">physical</a>
-    </div>
     <div class="newspread">
-        <div style="display:flex;flex-flow:column;width:auto;min-width:45%;flex-grow:2;">
+        <div style="display:flex;flex-flow:column;width:auto;min-width:45%;flex-grow:2;margin:0;padding:0;">
 	        <div class="folder" style="height:auto; padding:0 0;">
 		        <img src="./files/photos/BONer.gif"/>
 	        </div>
