@@ -4,6 +4,10 @@
 	</title>
 	<link rel="stylesheet" href="folder.css">
     <style>
+        .folder {
+            max-width:100%;
+            width:100%;
+        }
         .newspread {
             display:flex;
             flex-flow:row;
@@ -17,7 +21,6 @@
             flex-flow:column;
             flex-grow:1;
             width:auto;
-            max-width:35%;
             margin:0;
             padding:0 32px;
         }
@@ -36,6 +39,9 @@
         }
 
         @media screen and (orientation:landscape) {
+            .featured {
+                max-width:35%;
+            }
             .navigationmobile {
                 visibility:hidden;
             }
@@ -104,7 +110,7 @@
 	        </div>
         </div>
         <div class="featured">
-            <div class="folder" style="height:auto;width:auto;flex-flow:column;margin:0;padding:0;max-width:100%;">
+            <div class="folder" style="height:auto;flex-flow:column;margin:0;padding:0;max-width:100%;">
                 <p style="margin:0;padding:0;">FEATURED ARTICLE</p>
                 <h1>Lincoln and Grimsby Schoolchildren Found Consuming Human Bones - Autopsy Impossible </h1>
                 <p>
