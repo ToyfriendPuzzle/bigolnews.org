@@ -3,6 +3,58 @@
 		OLD NEWS
 	</title>
 	<link rel="stylesheet" href="../folder.css">
+    <style>
+        .folder {
+            max-width:100%;
+            width:100%;
+        }
+        .newspread {
+            display:flex;
+            flex-flow:row;
+            height:auto;
+            width:100%;
+            padding:0;
+            margin:0;
+        }
+        .featured {
+            display:flex;
+            flex-flow:column;
+            flex-grow:1;
+            margin:0;
+        }
+        .navigation {
+            height:auto;
+            width:auto;
+            position:absolute;
+            left:0;
+            writing-mode:vertical-lr;
+            padding:32px 4px;
+            margin:0;
+        }
+        .navigationmobile {
+            height:auto;
+        }
+
+        @media screen and (orientation:landscape) {
+            .featured {
+                max-width:35%;
+                width:auto;
+            }
+        }
+        @media screen and (orientation:portrait) {
+            body {
+                font-size:4vw;
+            }
+            .newspread {
+                flex-flow:column;
+                margin:0;
+            }
+            .featured {
+                max-width:100%;
+                width:100%;
+            }
+        }
+    </style>
 </head>
 <body>
 	<div class="folder" style="height:auto;">
